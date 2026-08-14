@@ -47,7 +47,7 @@ export default function AboutPage() {
     },
     {
       src: "/images/about/logos/noaa_fisheries.png",
-      alt: "AGWA logo",
+      alt: "NOAA Fisheries logo",
       width: 201,
     },
     {
@@ -70,16 +70,6 @@ export default function AboutPage() {
       src: "/images/about/logos/california-water-boards.png",
       alt: "California Water Boards logo",
       width: 330,
-    },
-    {
-      src: "/images/about/logos/agwa.png",
-      alt: "AGWA logo",
-      width: 311,
-    },
-    {
-      src: "/images/about/logos/noaa_fisheries.png",
-      alt: "AGWA logo",
-      width: 201,
     },
   ]
   useEffect(() => {

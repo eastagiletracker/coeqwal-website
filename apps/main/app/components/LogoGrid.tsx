@@ -84,12 +84,14 @@ export function LogoGrid({ id, ariaLabel, title, logos }: LogoGridProps) {
           placeItems: "center",
         }}
       >
-        {logos.map((logo) => (
+        {logos.map((logo, index) => (
           <Box
             component="img"
             src={logo.src}
             alt={logo.alt}
-            key={logo.src}
+            // Position is part of the key so a repeated src (a partner shown
+            // twice on purpose) cannot collide with an earlier entry.
+            key={`${logo.src}-${index}`}
             sx={{
               height: "auto",
               maxWidth: "100%", // Prevents overflow
